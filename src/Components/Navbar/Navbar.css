@@ -1,0 +1,118 @@
+/* Navbar.CSS */
+
+.Navbar {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  /* border-bottom-left-radius: 5px; */
+  /* border-bottom-right-radius: 5px; */
+  margin: auto;
+  height: 280px;
+  /* border: 1px solid black; */
+
+  /* MAKE IMAGE THE BACKGROUND OF THIS DIV */
+  background-image: url("../imgs//pattern-bg-desktop.png");
+  opacity: 0.9;
+  /* USE THE GRIDS */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 30% 65%;
+  grid-gap: 10px;
+}
+
+.header_title {
+  /* background-color: #191919; */
+  /* border: 1px solid white; */
+  color: white;
+
+  /* USE FLEX TO CENTER THE HEADER TITLE */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_ip {
+  /* background-color: #191919; */
+  width: 500px;
+  height: 70%;
+  margin: auto;
+  /* border: 1px solid white; */
+
+  /* USE FLIX */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* INPUT */
+#input_adress_ip {
+  width: 90%;
+  height: 40%;
+  margin-bottom: 130px;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+/* PLACEHOLDER */
+#input_adress_ip::placeholder {
+  padding: 10px;
+}
+
+/* BTN SEND */
+#btn_send {
+  width: 15%;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 43%;
+  margin-bottom: 130px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* INFORMATION ZONE,IP,ADRESS DIV */
+.Information {
+  width: 90%;
+  height: 160px;
+  margin: auto;
+  /* border: 2px solid black; */
+  /* background-color: #191919; */
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+
+  /* USE THE GRIDS TO SPLIT THIS DIV */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.info_box {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.info_box p {
+  color: grey;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* USE THE MEDIA QUERY */
+@media screen and (max-width: 992px) {
+  .Information {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px 10px;
+  }
+  .input_ip {
+    width: 90%;
+  }
+}
